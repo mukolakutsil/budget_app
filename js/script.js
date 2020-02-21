@@ -116,11 +116,11 @@ var btnStart = document.querySelector(".start"),
        
        chooseSum.addEventListener("input", function() {
            if(appData.savings == true) {
-               let suma =  +chooseSum.value,
+               let sum =  +chooseSum.value,
                    percent = +choosePercent.value;
        
-                   appData.monthIncome = suma/100/12*percent;
-                   appData.yearIncome = suma/100*percent;
+                   appData.monthIncome = sum/100/12*percent;
+                   appData.yearIncome = sum/100*percent;
        
                    monthvisangsValue.textContent = appData.monthIncome.toFixed(1);
                    yearSavingsValue.textContent = appData.yearIncome.toFixed(1);
@@ -130,11 +130,11 @@ var btnStart = document.querySelector(".start"),
        
        choosePercent.addEventListener("input", function() {
            if(appData.savings == true) {
-               let suma =  +chooseSum.value,
+               let sum =  +chooseSum.value,
                    percent = +choosePercent.value;
        
                    appData.monthIncome = sum/100/12*percent;
-                   appData.yearIncome = suma/100*percent;
+                   appData.yearIncome = sum/100*percent;
        
                    monthvisangsValue.textContent = appData.monthIncome.toFixed(1);
                    yearSavingsValue.textContent = appData.yearIncome.toFixed(1);
